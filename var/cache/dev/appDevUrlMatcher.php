@@ -109,6 +109,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
 
+        // app_default_create
+        if ($pathinfo === '/addProduct') {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::createAction',  '_route' => 'app_default_create',);
+        }
+
+        // app_default_show
+        if (0 === strpos($pathinfo, '/showProduct') && preg_match('#^/showProduct/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_default_show')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::showAction',));
+        }
+
         // app_lucky_number
         if ($pathinfo === '/lucky/number/slevin') {
             return array (  '_controller' => 'AppBundle\\Controller\\LuckyController::numberAction',  '_route' => 'app_lucky_number',);
