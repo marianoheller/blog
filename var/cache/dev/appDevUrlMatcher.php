@@ -109,42 +109,22 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
 
-        // app_default_create
-        if ($pathinfo === '/addProduct') {
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::createAction',  '_route' => 'app_default_create',);
-        }
-
-        // app_default_show
-        if (0 === strpos($pathinfo, '/showProduct') && preg_match('#^/showProduct/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_default_show')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::showAction',));
-        }
-
-        // app_lucky_number
-        if ($pathinfo === '/lucky/number/slevin') {
-            return array (  '_controller' => 'AppBundle\\Controller\\LuckyController::numberAction',  '_route' => 'app_lucky_number',);
-        }
-
-        // app_lucky_index
-        if (0 === strpos($pathinfo, '/api/lucky/number') && preg_match('#^/api/lucky/number/(?P<number>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_lucky_index')), array (  '_controller' => 'AppBundle\\Controller\\LuckyController::indexAction',));
-        }
-
-        // app_lucky_index2
-        if (0 === strpos($pathinfo, '/lucky/number') && preg_match('#^/lucky/number(?:/(?P<number>\\d+))?$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_lucky_index2')), array (  'number' => 1,  '_controller' => 'AppBundle\\Controller\\LuckyController::index2Action',));
-        }
-
-        if (0 === strpos($pathinfo, '/cosmos')) {
-            // app_lucky_indexcosmic
-            if ($pathinfo === '/cosmos') {
-                return array (  '_controller' => 'AppBundle\\Controller\\LuckyController::indexCosmicAction',  '_route' => 'app_lucky_indexcosmic',);
+        if (0 === strpos($pathinfo, '/cmd')) {
+            // fillDB
+            if ($pathinfo === '/cmd/fillDB') {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::createAction',  '_route' => 'fillDB',);
             }
 
-            // app_lucky_indexcosmic2
-            if ($pathinfo === '/cosmos2') {
-                return array (  '_controller' => 'AppBundle\\Controller\\LuckyController::indexCosmic2Action',  '_route' => 'app_lucky_indexcosmic2',);
+            // app_default_clear
+            if ($pathinfo === '/cmd/clearDB') {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::clearAction',  '_route' => 'app_default_clear',);
             }
 
+        }
+
+        // blog
+        if (0 === strpos($pathinfo, '/blog') && preg_match('#^/blog(?:\\.(?P<_format>html))?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog')), array (  '_format' => 'html',  '_controller' => 'AppBundle\\Controller\\LuckyController::numberAction',));
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
