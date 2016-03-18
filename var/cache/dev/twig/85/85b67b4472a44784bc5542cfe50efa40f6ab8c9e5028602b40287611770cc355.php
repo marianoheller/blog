@@ -15,8 +15,8 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_947d9caa22937d469a3dd68029af94a1098b26a5d144797a7a75215204229690 = $this->env->getExtension("native_profiler");
-        $__internal_947d9caa22937d469a3dd68029af94a1098b26a5d144797a7a75215204229690->enter($__internal_947d9caa22937d469a3dd68029af94a1098b26a5d144797a7a75215204229690_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "blog.html.twig"));
+        $__internal_4a45d286897d5514e5da7e08b93b74e9235531fa4d7def44935718e1cbf36c4c = $this->env->getExtension("native_profiler");
+        $__internal_4a45d286897d5514e5da7e08b93b74e9235531fa4d7def44935718e1cbf36c4c->enter($__internal_4a45d286897d5514e5da7e08b93b74e9235531fa4d7def44935718e1cbf36c4c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "blog.html.twig"));
 
         // line 1
         echo "<!doctype html>
@@ -31,7 +31,7 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 \t\t<div class=\"top-bar\">
 \t\t\t<div class=\"top-bar-left\">
 \t\t\t\t<ul class=\"menu\">
-\t\t\t\t\t<li class=\"menu-text\">Yeti Agency</li>
+\t\t\t\t\t<li class=\"menu-text\">Lorem Agency</li>
 \t\t\t\t</ul>
 \t\t\t</div>
 \t\t\t<div class=\"top-bar-right\">
@@ -45,7 +45,7 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 \t\t</div>
 \t\t<div class=\"callout large primary\">
 \t\t\t<div class=\"row column text-center\">
-\t\t\t\t<h1>Our Blog</h1>
+\t\t\t\t<h1>Lorem ipsum</h1>
 \t\t\t</div>
 \t\t</div>
 \t\t<div class=\"row\" id=\"content\">
@@ -93,10 +93,10 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 \t\t\t\t<div class=\"sticky\" data-sticky data-anchor=\"content\">
 \t\t\t\t\t<h4>Categories</h4>
 \t\t\t\t\t<ul>
-\t\t\t\t\t\t<li><a href=\"#\">Skyler</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Jesse</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Mike</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Holly</a></li>
+\t\t\t\t\t\t<li><a href=\"#\">A</a></li>
+\t\t\t\t\t\t<li><a href=\"#\">B</a></li>
+\t\t\t\t\t\t<li><a href=\"#\">C</a></li>
+\t\t\t\t\t\t<li><a href=\"#\">D</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t\t<h4>Authors</h4>
 \t\t\t\t\t<ul>
@@ -129,7 +129,7 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 \t</body>
 </html>";
         
-        $__internal_947d9caa22937d469a3dd68029af94a1098b26a5d144797a7a75215204229690->leave($__internal_947d9caa22937d469a3dd68029af94a1098b26a5d144797a7a75215204229690_prof);
+        $__internal_4a45d286897d5514e5da7e08b93b74e9235531fa4d7def44935718e1cbf36c4c->leave($__internal_4a45d286897d5514e5da7e08b93b74e9235531fa4d7def44935718e1cbf36c4c_prof);
 
     }
 
@@ -160,7 +160,7 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 /* 		<div class="top-bar">*/
 /* 			<div class="top-bar-left">*/
 /* 				<ul class="menu">*/
-/* 					<li class="menu-text">Yeti Agency</li>*/
+/* 					<li class="menu-text">Lorem Agency</li>*/
 /* 				</ul>*/
 /* 			</div>*/
 /* 			<div class="top-bar-right">*/
@@ -174,7 +174,7 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 /* 		</div>*/
 /* 		<div class="callout large primary">*/
 /* 			<div class="row column text-center">*/
-/* 				<h1>Our Blog</h1>*/
+/* 				<h1>Lorem ipsum</h1>*/
 /* 			</div>*/
 /* 		</div>*/
 /* 		<div class="row" id="content">*/
@@ -198,10 +198,10 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 /* 				<div class="sticky" data-sticky data-anchor="content">*/
 /* 					<h4>Categories</h4>*/
 /* 					<ul>*/
-/* 						<li><a href="#">Skyler</a></li>*/
-/* 						<li><a href="#">Jesse</a></li>*/
-/* 						<li><a href="#">Mike</a></li>*/
-/* 						<li><a href="#">Holly</a></li>*/
+/* 						<li><a href="#">A</a></li>*/
+/* 						<li><a href="#">B</a></li>*/
+/* 						<li><a href="#">C</a></li>*/
+/* 						<li><a href="#">D</a></li>*/
 /* 					</ul>*/
 /* 					<h4>Authors</h4>*/
 /* 					<ul>*/

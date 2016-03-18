@@ -29,7 +29,7 @@ class LuckyController extends Controller
       $query = $repo->createQueryBuilder('p')
                 ->where('LENGTH(p.body) > :val')
                 ->setParameter('val', '3')
-                ->orderBy('p.date', 'ASC')
+                ->orderBy('p.id', 'DESC')     //de mas nuevo a mas viejo
                 ->getQuery();
 
 

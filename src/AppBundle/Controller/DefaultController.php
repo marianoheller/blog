@@ -9,6 +9,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Constraints\DateTime;
+use Symfony\Component\DomCrawler\Crawler;
+use Symfony\Component\CssSelector\CssSelectorConverter;
+
 
 class DefaultController extends Controller
 {
@@ -30,16 +33,39 @@ class DefaultController extends Controller
     public function createAction()
     {
         $blog_post = new blog_post();
-        $blog_post->setTitle('A Foo Bar');
-        $blog_post->setBody(    'DateTime does not support split seconds (microseconds or milliseconds etc.)
-                                I dont know why this isnt documented.
-                                The class constructor will accept them without complaint, but they are discarded.
-                                There does not appear to be a way to take a string like "2012-07-08 11:14:15.638276" and store it in an objective form in a complete way.'
-                            );
-        $blog_post->setAuthor('Lorem ipsum');
-        $d1=new \DateTime("2012-07-08 11:14:15");
+        //Title
+        $url='http://loripsum.net/api/2/short';
+        $lines_array=file($url);
+        $lines_string=implode('',$lines_array);
+        $crawler = new Crawler($lines_string);
+        $text = $crawler->filter('body > p')->last()->text();
+        $blog_post->setTitle(trim($text));
+        //Body
+        $url='http://loripsum.net/api';
+        $lines_array=file($url);
+        $lines_string=implode('',$lines_array);
+        $crawler = new Crawler($lines_string);
+        $nodeValues = $crawler->filter('body > p')->each(function (Crawler $node, $i) {
+            return $node->text();
+        });
+        $text = implode("",$nodeValues);
+        $blog_post->setBody($text);
+        //Author
+        $url='http://loripsum.net/api/2/short';
+        $lines_array=file($url);
+        $lines_string=implode('',$lines_array);
+        $crawler = new Crawler($lines_string);
+        $text = $crawler->filter('body > p')->last()->text();
+        $text=str_replace(',','',$text);
+        $text=str_replace('.','',$text);
+        $blog_post->setAuthor(trim(substr($text,0,rand(5,12))));
+        //DateTime
+        $d1=new \DateTime();
         $blog_post->setDate($d1);
-        $blog_post->setImage('https://www.google.com.ar/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+        //Image
+        $imagePath = 'https://unsplash.it/850/350?image='.rand(0,100);
+        $blog_post->setImage($imagePath);
+        //Push data
         $em = $this->getDoctrine()->getManager();
         $em->persist($blog_post);
         $em->flush();
