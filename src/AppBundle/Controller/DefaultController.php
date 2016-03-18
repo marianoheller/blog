@@ -48,7 +48,7 @@ class DefaultController extends Controller
         $nodeValues = $crawler->filter('body > p')->each(function (Crawler $node, $i) {
             return $node->text();
         });
-        $text = implode("",$nodeValues);
+        $text = implode("<br/>",$nodeValues);
         $blog_post->setBody($text);
         //Author
         $url='http://loripsum.net/api/2/short';
