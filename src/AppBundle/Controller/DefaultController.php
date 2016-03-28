@@ -33,13 +33,17 @@ class DefaultController extends Controller
     public function createAction()
     {
         $blog_post = new blog_post();
+
         //Title
         $url='http://loripsum.net/api/2/short';
         $lines_array=file($url);
         $lines_string=implode('',$lines_array);
         $crawler = new Crawler($lines_string);
         $text = $crawler->filter('body > p')->last()->text();
+        $text=str_replace(', ','',$text);
+        $text=str_replace('. ','',$text);
         $blog_post->setTitle(trim($text));
+
         //Body
         $url='http://loripsum.net/api';
         $lines_array=file($url);
@@ -50,21 +54,25 @@ class DefaultController extends Controller
         });
         $text = implode("<br/>",$nodeValues);
         $blog_post->setBody($text);
+
         //Author
         $url='http://loripsum.net/api/2/short';
         $lines_array=file($url);
         $lines_string=implode('',$lines_array);
         $crawler = new Crawler($lines_string);
         $text = $crawler->filter('body > p')->last()->text();
-        $text=str_replace(',','',$text);
-        $text=str_replace('.','',$text);
+        $text=str_replace(', ','',$text);
+        $text=str_replace('. ','',$text);
         $blog_post->setAuthor(trim(substr($text,0,rand(5,12))));
+
         //DateTime
         $d1=new \DateTime();
         $blog_post->setDate($d1);
+
         //Image
         $imagePath = 'https://unsplash.it/850/350?image='.rand(0,100);
         $blog_post->setImage($imagePath);
+
         //Push data
         $em = $this->getDoctrine()->getManager();
         $em->persist($blog_post);

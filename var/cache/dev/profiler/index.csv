@@ -104,3 +104,9 @@ d11b5c,127.0.0.1,GET,http://localhost:8000/blog,1458331087,,200
 a710da,127.0.0.1,GET,http://localhost:8000/cmd/fillDB,1458331414,,200
 79948e,127.0.0.1,GET,http://localhost:8000/blog,1458331417,,200
 13c299,127.0.0.1,GET,http://localhost:8000/blog,1458331535,,200
+bacac8,127.0.0.1,GET,http://localhost:8000/cmd/clearDB,1458332177,,302
+c1f0eb,127.0.0.1,GET,http://localhost:8000/cmd/fillDB,1458332179,,200
+e44b35,127.0.0.1,GET,http://localhost:8000/blog,1458332182,,200
+ec7a19,127.0.0.1,GET,http://localhost:8000/cmd/fillDB,1458332222,,200
+5c8fa4,127.0.0.1,GET,http://localhost:8000/blog,1458332224,,200
+f371c6,127.0.0.1,GET,http://localhost:8000/blog,1458332742,,200
