@@ -78,11 +78,8 @@
   'SwiftmailerBundle:Collector:swiftmailer.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\vendor\\symfony\\swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig',
   'DoctrineBundle:Collector:db.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/explain.html.twig',
-  ':astronomy:cosmos.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\app/Resources\\views/astronomy/cosmos.html.twig',
-  ':astronomywebsitetemplate:index.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\app/Resources\\views/astronomywebsitetemplate/index.html.twig',
   '::base.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\app/Resources\\views/base.html.twig',
   '::blog.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\app/Resources\\views/blog.html.twig',
-  '::cosmicbase.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\app/Resources\\views/cosmicbase.html.twig',
   ':default:index.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\app/Resources\\views/default/index.html.twig',
-  ':lucky:luckynumber.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\app/Resources\\views/lucky/luckynumber.html.twig',
+  ':Exception:error404.html.twig' => 'D:\\Documentos\\WebDev\\Symfony\\blog\\app/Resources\\views/Exception/error404.html.twig',
 );

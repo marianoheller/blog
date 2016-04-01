@@ -28,7 +28,7 @@ class __TwigTemplate_d9efb8a2007e959be293edc90ac1bc89d03370bbe35d2f277a1db7411c7
 \t\t<div class=\"top-bar\">
 \t\t\t<div class=\"top-bar-left\">
 \t\t\t\t<ul class=\"menu\">
-\t\t\t\t\t<li class=\"menu-text\">Yeti Agency</li>
+\t\t\t\t\t<li class=\"menu-text\">Lorem Agency</li>
 \t\t\t\t</ul>
 \t\t\t</div>
 \t\t\t<div class=\"top-bar-right\">
@@ -42,7 +42,7 @@ class __TwigTemplate_d9efb8a2007e959be293edc90ac1bc89d03370bbe35d2f277a1db7411c7
 \t\t</div>
 \t\t<div class=\"callout large primary\">
 \t\t\t<div class=\"row column text-center\">
-\t\t\t\t<h1>Our Blog</h1>
+\t\t\t\t<h1>Lorem ipsum</h1>
 \t\t\t</div>
 \t\t</div>
 \t\t<div class=\"row\" id=\"content\">
@@ -90,10 +90,10 @@ class __TwigTemplate_d9efb8a2007e959be293edc90ac1bc89d03370bbe35d2f277a1db7411c7
 \t\t\t\t<div class=\"sticky\" data-sticky data-anchor=\"content\">
 \t\t\t\t\t<h4>Categories</h4>
 \t\t\t\t\t<ul>
-\t\t\t\t\t\t<li><a href=\"#\">Skyler</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Jesse</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Mike</a></li>
-\t\t\t\t\t\t<li><a href=\"#\">Holly</a></li>
+\t\t\t\t\t\t<li><a href=\"#\">A</a></li>
+\t\t\t\t\t\t<li><a href=\"#\">B</a></li>
+\t\t\t\t\t\t<li><a href=\"#\">C</a></li>
+\t\t\t\t\t\t<li><a href=\"#\">D</a></li>
 \t\t\t\t\t</ul>
 \t\t\t\t\t<h4>Authors</h4>
 \t\t\t\t\t<ul>
@@ -154,7 +154,7 @@ class __TwigTemplate_d9efb8a2007e959be293edc90ac1bc89d03370bbe35d2f277a1db7411c7
 /* 		<div class="top-bar">*/
 /* 			<div class="top-bar-left">*/
 /* 				<ul class="menu">*/
-/* 					<li class="menu-text">Yeti Agency</li>*/
+/* 					<li class="menu-text">Lorem Agency</li>*/
 /* 				</ul>*/
 /* 			</div>*/
 /* 			<div class="top-bar-right">*/
@@ -168,7 +168,7 @@ class __TwigTemplate_d9efb8a2007e959be293edc90ac1bc89d03370bbe35d2f277a1db7411c7
 /* 		</div>*/
 /* 		<div class="callout large primary">*/
 /* 			<div class="row column text-center">*/
-/* 				<h1>Our Blog</h1>*/
+/* 				<h1>Lorem ipsum</h1>*/
 /* 			</div>*/
 /* 		</div>*/
 /* 		<div class="row" id="content">*/
@@ -192,10 +192,10 @@ class __TwigTemplate_d9efb8a2007e959be293edc90ac1bc89d03370bbe35d2f277a1db7411c7
 /* 				<div class="sticky" data-sticky data-anchor="content">*/
 /* 					<h4>Categories</h4>*/
 /* 					<ul>*/
-/* 						<li><a href="#">Skyler</a></li>*/
-/* 						<li><a href="#">Jesse</a></li>*/
-/* 						<li><a href="#">Mike</a></li>*/
-/* 						<li><a href="#">Holly</a></li>*/
+/* 						<li><a href="#">A</a></li>*/
+/* 						<li><a href="#">B</a></li>*/
+/* 						<li><a href="#">C</a></li>*/
+/* 						<li><a href="#">D</a></li>*/
 /* 					</ul>*/
 /* 					<h4>Authors</h4>*/
 /* 					<ul>*/
