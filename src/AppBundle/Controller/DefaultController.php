@@ -28,7 +28,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/cmd/addPost" , name="fillDB")
+     * @Route("/cmd/addPost" , name="addPost")
      */
 
     public function createAction()
@@ -57,14 +57,23 @@ class DefaultController extends Controller
         $blog_post->setBody($text);
 
         //Author
-        $url='http://loripsum.net/api/2/short';
+        /*$url='http://loripsum.net/api/2/short';
         $lines_array=file($url);
         $lines_string=implode('',$lines_array);
         $crawler = new Crawler($lines_string);
         $text = $crawler->filter('body > p')->last()->text();
         $text=str_replace(', ','',$text);
         $text=str_replace('. ','',$text);
-        $blog_post->setAuthor(trim(substr($text,0,rand(5,12))));
+        $blog_post->setAuthor(trim(substr($text,0,rand(5,12))));*/
+        $repo = $this->getDoctrine()->getRepository('AppBundle:Author');
+        $query = $repo->createQueryBuilder('a')
+            ->where('LENGTH(a.name) > :val')
+            ->setParameter('val', '1')
+            ->getQuery();
+        $authorsArray = $query->getResult();
+        $author = $authorsArray[random_int(0, sizeof($authorsArray)-1)];
+        $blog_post->setAuthor($author->getName());
+
 
         //DateTime
         $d1=new \DateTime();
@@ -98,7 +107,7 @@ class DefaultController extends Controller
         // $query->setParameter('Val', 'Lorem ipsum');
         $query->getQuery()->execute();
         $em->flush();
-        return $this->redirectToRoute('fillDB');
+        return $this->redirectToRoute('addPost');
     }
 
     /**

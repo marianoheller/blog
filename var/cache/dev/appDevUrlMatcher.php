@@ -110,9 +110,9 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         if (0 === strpos($pathinfo, '/cmd')) {
-            // fillDB
+            // addPost
             if ($pathinfo === '/cmd/addPost') {
-                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::createAction',  '_route' => 'fillDB',);
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::createAction',  '_route' => 'addPost',);
             }
 
             // app_default_clear

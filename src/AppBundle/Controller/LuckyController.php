@@ -24,10 +24,12 @@ class LuckyController extends Controller
      */
     public function numberAction($page)
     {
+        $maxPostsPerPage = 3;
+
         $em = $this->getDoctrine()->getManager();
         $repo = $this->getDoctrine()->getRepository('AppBundle:blog_post');
 
-        $offset = 3*$page;
+        $offset = $maxPostsPerPage*$page;
 
 
         //GET POSTS
@@ -36,7 +38,7 @@ class LuckyController extends Controller
                         ->setParameter('val', '3')
                         ->orderBy('p.id', 'DESC')     //de mas nuevo a mas viejo
                         ->setFirstResult( $offset )
-                        ->setMaxResults(3)          //max posts per page
+                        ->setMaxResults($maxPostsPerPage)          //max posts per page
                         ->getQuery();
 
         $articles = $query->getResult();
