@@ -29,6 +29,17 @@
     {% endfor %}
 {% endblock %}
 
+
+{% block authorList %}
+    {% for author in authorsArray  %}
+        <li><a href="#">{{ author.getName() }}</a></li>
+    {%  endfor %}
+    {#<li><a href="#">Skyler</a></li>
+    <li><a href="#">Jesse</a></li>
+    <li><a href="#">Mike</a></li>
+    <li><a href="#">Holly</a></li>#}
+{% endblock %}
+
 {#<li class="current"><span class="show-for-sr">You're on page</span> 1</li>
 <li><a href="#" >2</a></li>
 <li><a href="#" >3</a></li>

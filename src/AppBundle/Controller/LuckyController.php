@@ -26,13 +26,10 @@ class LuckyController extends Controller
     {
         $maxPostsPerPage = 3;
 
+        //GET POSTS
         $em = $this->getDoctrine()->getManager();
         $repo = $this->getDoctrine()->getRepository('AppBundle:blog_post');
-
         $offset = $maxPostsPerPage*$page;
-
-
-        //GET POSTS
         $query = $repo->createQueryBuilder('p')
                         ->where('LENGTH(p.body) > :val')
                         ->setParameter('val', '3')
@@ -40,19 +37,22 @@ class LuckyController extends Controller
                         ->setFirstResult( $offset )
                         ->setMaxResults($maxPostsPerPage)          //max posts per page
                         ->getQuery();
-
         $articles = $query->getResult();
 
-        //Get Total
+        //Get Total Count (for pagination)
         $queryCount = $em->createQuery('SELECT COUNT(b) FROM AppBundle:blog_post b');
-
-        //$numArticles = $queryCount->getResult();
         $numArticles = $queryCount->getSingleScalarResult();
+
+        //Get Authors
+        $queryCount = $em->createQuery('SELECT a FROM AppBundle:Author a ORDER BY a.name ASC');
+        $authorsArray = $queryCount->getResult();
 
         return $this->render(
           'blog_content.html.twig',
           array('blog_entries' => $articles,
-              'cantArticles' => $numArticles)
+              'cantArticles' => $numArticles,
+              'authorsArray' => $authorsArray
+              )
           );
     }
 
