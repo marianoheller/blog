@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\blog_post;
+use AppBundle\Entity\Author;
 use Symfony\Component\HttpFoundation\Response;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -27,7 +28,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/cmd/fillDB" , name="fillDB")
+     * @Route("/cmd/addPost" , name="fillDB")
      */
 
     public function createAction()
@@ -82,7 +83,7 @@ class DefaultController extends Controller
 
 
     /**
-     * @Route("/cmd/clearDB")
+     * @Route("/cmd/clearPosts")
      */
 
     public function clearAction()
@@ -98,6 +99,57 @@ class DefaultController extends Controller
         $query->getQuery()->execute();
         $em->flush();
         return $this->redirectToRoute('fillDB');
+    }
+
+    /**
+     * @Route("/cmd/setAuthors")
+     */
+    public function setAuthorsAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $repo = $this->getDoctrine()->getRepository('AppBundle:Author');
+        $query = $repo->createQueryBuilder('p');
+        $query->delete();
+        $query->getQuery()->execute();
+        $em->flush();
+
+        $author = new Author();
+        $author->setName("Skyler");
+        $author->setMail("skyler@gmail.com");
+        $d1=new \DateTime();
+        $author->setLastPostDate($d1);
+        //Push data
+        $em->persist($author);
+        $em->flush();
+
+        $author = new Author();
+        $author->setName("Jesse");
+        $author->setMail("jesse@gmail.com");
+        $d1=new \DateTime();
+        $author->setLastPostDate($d1);
+        //Push data
+        $em->persist($author);
+        $em->flush();
+
+        $author = new Author();
+        $author->setName("Mike");
+        $author->setMail("mike@gmail.com");
+        $d1=new \DateTime();
+        $author->setLastPostDate($d1);
+        //Push data
+        $em->persist($author);
+        $em->flush();
+
+        $author = new Author();
+        $author->setName("Molly");
+        $author->setMail("molly@gmail.com");
+        $d1=new \DateTime();
+        $author->setLastPostDate($d1);
+        //Push data
+        $em->persist($author);
+        $em->flush();
+
+        return new Response("Authors created");
     }
 }
 

@@ -111,13 +111,18 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         if (0 === strpos($pathinfo, '/cmd')) {
             // fillDB
-            if ($pathinfo === '/cmd/fillDB') {
+            if ($pathinfo === '/cmd/addPost') {
                 return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::createAction',  '_route' => 'fillDB',);
             }
 
             // app_default_clear
-            if ($pathinfo === '/cmd/clearDB') {
+            if ($pathinfo === '/cmd/clearPosts') {
                 return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::clearAction',  '_route' => 'app_default_clear',);
+            }
+
+            // app_default_setauthors
+            if ($pathinfo === '/cmd/setAuthors') {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::setAuthorsAction',  '_route' => 'app_default_setauthors',);
             }
 
         }
