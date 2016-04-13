@@ -8,6 +8,16 @@
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            {% javascripts '@AppBundle/Resources/public/js/*' %}
+                <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
+
+        <script>
+            $(document).ready(function () {
+                {% block documentReady %}{% endblock documentReady %}
+            });
+        </script>
     </body>
 </html>

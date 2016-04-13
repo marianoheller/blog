@@ -15,11 +15,14 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c62068c6616f4e757174f72b3912e61ee58ddcaefcb4a20e86db745b5d058909 = $this->env->getExtension("native_profiler");
-        $__internal_c62068c6616f4e757174f72b3912e61ee58ddcaefcb4a20e86db745b5d058909->enter($__internal_c62068c6616f4e757174f72b3912e61ee58ddcaefcb4a20e86db745b5d058909_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "blog.html.twig"));
+        $__internal_923d90cdb01665feaecc44773b4bca5d37fe46a4b017e97ecdb1e44f565496e5 = $this->env->getExtension("native_profiler");
+        $__internal_923d90cdb01665feaecc44773b4bca5d37fe46a4b017e97ecdb1e44f565496e5->enter($__internal_923d90cdb01665feaecc44773b4bca5d37fe46a4b017e97ecdb1e44f565496e5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "blog.html.twig"));
 
         // line 1
-        echo "<!doctype html>
+        $context["maxPostsPerPage"] = 2;
+        // line 2
+        echo "
+<!doctype html>
 <html class=\"no-js\" lang=\"en\">
 \t<head>
 \t\t<meta charset=\"utf-8\"/>
@@ -52,42 +55,69 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 \t\t\t<div class=\"medium-8 columns\">
 
 \t\t\t\t";
-        // line 33
+        // line 35
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["blog_entries"]) ? $context["blog_entries"] : $this->getContext($context, "blog_entries")));
+        $context['loop'] = array(
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        );
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
         foreach ($context['_seq'] as $context["_key"] => $context["entry"]) {
-            // line 34
-            echo "\t\t\t\t\t<div class=\"blog-post\">
-\t\t\t\t\t\t<h3>";
-            // line 35
-            echo twig_escape_filter($this->env, $this->getAttribute($context["entry"], "title", array()), "html", null, true);
-            echo " <small>";
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["entry"], "date", array()), "format", array(0 => "d-m-Y"), "method"), "html", null, true);
-            echo "</small></h3>
-\t\t\t\t\t\t<img class=\"thumbnail\" src=";
             // line 36
-            echo twig_escape_filter($this->env, $this->getAttribute($context["entry"], "image", array()), "html", null, true);
-            echo ">
-\t\t\t\t\t\t<p>";
-            // line 37
-            echo twig_escape_filter($this->env, $this->getAttribute($context["entry"], "body", array()), "html", null, true);
-            echo "</p>
-\t\t\t\t\t\t<div class=\"callout\">
-\t\t\t\t\t\t\t<ul class=\"menu simple\">
-\t\t\t\t\t\t\t\t<li><a href=\"#\"><p>";
-            // line 40
-            echo twig_escape_filter($this->env, $this->getAttribute($context["entry"], "author", array()), "html", null, true);
-            echo "</p></a></li>
-\t\t\t\t\t\t\t\t<li><a href=\"#\">Comments: 3</a></li>
-\t\t\t\t\t\t\t</ul>
+            echo "\t\t\t\t\t";
+            if (($this->getAttribute($context["loop"], "index0", array()) < (isset($context["maxPostsPerPage"]) ? $context["maxPostsPerPage"] : $this->getContext($context, "maxPostsPerPage")))) {
+                // line 37
+                echo "\t\t\t\t\t\t<div class=\"blog-post\">
+\t\t\t\t\t\t\t<h3>";
+                // line 38
+                echo twig_escape_filter($this->env, $this->getAttribute($context["entry"], "title", array()), "html", null, true);
+                echo " <small>";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["entry"], "date", array()), "format", array(0 => "d-m-Y"), "method"), "html", null, true);
+                echo "</small></h3>
+\t\t\t\t\t\t\t<img class=\"thumbnail\" src=";
+                // line 39
+                echo twig_escape_filter($this->env, $this->getAttribute($context["entry"], "image", array()), "html", null, true);
+                echo ">
+\t\t\t\t\t\t\t<p>";
+                // line 40
+                echo twig_escape_filter($this->env, $this->getAttribute($context["entry"], "body", array()), "html", null, true);
+                echo "</p>
+\t\t\t\t\t\t\t<div class=\"callout\">
+\t\t\t\t\t\t\t\t<ul class=\"menu simple\">
+\t\t\t\t\t\t\t\t\t<li><a href=\"#\"><p>";
+                // line 43
+                echo twig_escape_filter($this->env, $this->getAttribute($context["entry"], "author", array()), "html", null, true);
+                echo "</p></a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Comments: 3</a></li>
+\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t    ";
+\t\t\t\t\t";
+            }
+            // line 49
+            echo "\t\t\t    ";
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['entry'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 46
+        // line 50
         echo "\t\t\t</div>
 \t\t\t<div class=\"medium-3 columns\" data-sticky-container>
 \t\t\t\t<div class=\"sticky\" data-sticky data-anchor=\"content\">
@@ -111,14 +141,58 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 \t\t<div class=\"row column\">
 \t\t\t<ul class=\"pagination\" role=\"navigation\" aria-label=\"Pagination\">
 \t\t\t\t<li class=\"disabled\">Previous</li>
-\t\t\t\t<li class=\"current\"><span class=\"show-for-sr\">You're on page</span> 1</li>
-\t\t\t\t<li><a href=\"#\" aria-label=\"Page 2\">2</a></li>
-\t\t\t\t<li><a href=\"#\" aria-label=\"Page 3\">3</a></li>
-\t\t\t\t<li><a href=\"#\" aria-label=\"Page 4\">4</a></li>
-\t\t\t\t<li class=\"ellipsis\"></li>
-\t\t\t\t<li><a href=\"#\" aria-label=\"Page 12\">12</a></li>
-\t\t\t\t<li><a href=\"#\" aria-label=\"Page 13\">13</a></li>
-\t\t\t\t<li><a href=\"#\" aria-label=\"Next page\">Next</a></li>
+
+\t\t\t\t";
+        // line 74
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["blog_entries"]) ? $context["blog_entries"] : $this->getContext($context, "blog_entries")));
+        $context['loop'] = array(
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        );
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
+        foreach ($context['_seq'] as $context["_key"] => $context["entry"]) {
+            // line 75
+            echo "\t\t\t\t\t";
+            if ((($this->getAttribute($context["loop"], "index0", array()) % (isset($context["maxPostsPerPage"]) ? $context["maxPostsPerPage"] : $this->getContext($context, "maxPostsPerPage"))) == 0)) {
+                // line 76
+                echo "\t\t\t\t\t\t";
+                $context["auxPagIndex"] = ($this->getAttribute($context["loop"], "index0", array()) / (isset($context["maxPostsPerPage"]) ? $context["maxPostsPerPage"] : $this->getContext($context, "maxPostsPerPage")));
+                // line 77
+                echo "\t\t\t\t\t\t<li><a href=\"#";
+                echo twig_escape_filter($this->env, (isset($context["auxPagIndex"]) ? $context["auxPagIndex"] : $this->getContext($context, "auxPagIndex")), "html", null, true);
+                echo "\" >";
+                echo twig_escape_filter($this->env, (isset($context["auxPagIndex"]) ? $context["auxPagIndex"] : $this->getContext($context, "auxPagIndex")), "html", null, true);
+                echo "</a></li>
+\t\t\t\t\t";
+            }
+            // line 79
+            echo "\t\t\t\t";
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['entry'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 80
+        echo "\t\t\t\t";
+        // line 87
+        echo "
+\t\t\t\t<li><a href=\"#\" >Next</a></li>
 \t\t\t</ul>
 \t\t</div>
 \t\t<script src=\"https://code.jquery.com/jquery-2.1.4.min.js\"></script>
@@ -129,7 +203,7 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 \t</body>
 </html>";
         
-        $__internal_c62068c6616f4e757174f72b3912e61ee58ddcaefcb4a20e86db745b5d058909->leave($__internal_c62068c6616f4e757174f72b3912e61ee58ddcaefcb4a20e86db745b5d058909_prof);
+        $__internal_923d90cdb01665feaecc44773b4bca5d37fe46a4b017e97ecdb1e44f565496e5->leave($__internal_923d90cdb01665feaecc44773b4bca5d37fe46a4b017e97ecdb1e44f565496e5_prof);
 
     }
 
@@ -145,9 +219,11 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 
     public function getDebugInfo()
     {
-        return array (  91 => 46,  79 => 40,  73 => 37,  69 => 36,  63 => 35,  60 => 34,  56 => 33,  22 => 1,);
+        return array (  194 => 87,  192 => 80,  178 => 79,  170 => 77,  167 => 76,  164 => 75,  147 => 74,  121 => 50,  107 => 49,  98 => 43,  92 => 40,  88 => 39,  82 => 38,  79 => 37,  76 => 36,  59 => 35,  24 => 2,  22 => 1,);
     }
 }
+/* {% set maxPostsPerPage = 2 %}*/
+/* */
 /* <!doctype html>*/
 /* <html class="no-js" lang="en">*/
 /* 	<head>*/
@@ -180,18 +256,20 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 /* 		<div class="row" id="content">*/
 /* 			<div class="medium-8 columns">*/
 /* */
-/* 				{% for entry in blog_entries %}*/
-/* 					<div class="blog-post">*/
-/* 						<h3>{{ entry.title }} <small>{{ entry.date.format('d-m-Y') }}</small></h3>*/
-/* 						<img class="thumbnail" src={{ entry.image }}>*/
-/* 						<p>{{ entry.body }}</p>*/
-/* 						<div class="callout">*/
-/* 							<ul class="menu simple">*/
-/* 								<li><a href="#"><p>{{ entry.author }}</p></a></li>*/
-/* 								<li><a href="#">Comments: 3</a></li>*/
-/* 							</ul>*/
+/* 				{% for entry in blog_entries  %}*/
+/* 					{% if loop.index0 < maxPostsPerPage %}*/
+/* 						<div class="blog-post">*/
+/* 							<h3>{{ entry.title }} <small>{{ entry.date.format('d-m-Y') }}</small></h3>*/
+/* 							<img class="thumbnail" src={{ entry.image }}>*/
+/* 							<p>{{ entry.body }}</p>*/
+/* 							<div class="callout">*/
+/* 								<ul class="menu simple">*/
+/* 									<li><a href="#"><p>{{ entry.author }}</p></a></li>*/
+/* 									<li><a href="#">Comments: 3</a></li>*/
+/* 								</ul>*/
+/* 							</div>*/
 /* 						</div>*/
-/* 					</div>*/
+/* 					{% endif %}*/
 /* 			    {% endfor %}*/
 /* 			</div>*/
 /* 			<div class="medium-3 columns" data-sticky-container>*/
@@ -216,14 +294,22 @@ class __TwigTemplate_d89c88604d60c4b571b79e77a1f2d49a0949ed4ff3413b468987e8e20ca
 /* 		<div class="row column">*/
 /* 			<ul class="pagination" role="navigation" aria-label="Pagination">*/
 /* 				<li class="disabled">Previous</li>*/
-/* 				<li class="current"><span class="show-for-sr">You're on page</span> 1</li>*/
-/* 				<li><a href="#" aria-label="Page 2">2</a></li>*/
-/* 				<li><a href="#" aria-label="Page 3">3</a></li>*/
-/* 				<li><a href="#" aria-label="Page 4">4</a></li>*/
+/* */
+/* 				{% for entry in blog_entries %}*/
+/* 					{% if (loop.index0%maxPostsPerPage) == 0 %}*/
+/* 						{% set auxPagIndex = loop.index0/maxPostsPerPage %}*/
+/* 						<li><a href="#{{auxPagIndex}}" >{{ auxPagIndex }}</a></li>*/
+/* 					{% endif %}*/
+/* 				{% endfor %}*/
+/* 				{#<li class="current"><span class="show-for-sr">You're on page</span> 1</li>*/
+/* 				<li><a href="#" >2</a></li>*/
+/* 				<li><a href="#" >3</a></li>*/
+/* 				<li><a href="#" >4</a></li>*/
 /* 				<li class="ellipsis"></li>*/
-/* 				<li><a href="#" aria-label="Page 12">12</a></li>*/
-/* 				<li><a href="#" aria-label="Page 13">13</a></li>*/
-/* 				<li><a href="#" aria-label="Next page">Next</a></li>*/
+/* 				<li><a href="#" >12</a></li>*/
+/* 				<li><a href="#" >13</a></li>#}*/
+/* */
+/* 				<li><a href="#" >Next</a></li>*/
 /* 			</ul>*/
 /* 		</div>*/
 /* 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>*/

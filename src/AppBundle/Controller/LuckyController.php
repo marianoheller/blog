@@ -22,21 +22,30 @@ class LuckyController extends Controller
     public function numberAction()
     {
 
-      $em = $this->getDoctrine()->getManager();
-      $repo = $this->getDoctrine()->getRepository('AppBundle:blog_post');
+
+        $em = $this->getDoctrine()->getManager();
+        $repo = $this->getDoctrine()->getRepository('AppBundle:blog_post');
+
+        $offset = 0;
 
 
-      $query = $repo->createQueryBuilder('p')
-                ->where('LENGTH(p.body) > :val')
-                ->setParameter('val', '3')
-                ->orderBy('p.id', 'DESC')     //de mas nuevo a mas viejo
-                ->getQuery();
+        //GET POSTS
+        $query = $repo->createQueryBuilder('p')
+                        ->where('LENGTH(p.body) > :val')
+                        ->setParameter('val', '3')
+                        ->orderBy('p.id', 'DESC')     //de mas nuevo a mas viejo
+                        ->setFirstResult( $offset )
+                        //->setMaxResults(3)
+                        ->getQuery();
 
+        $articles = $query->getResult();
 
-      $articles = $query->getResult();
+        //Get Total
+        $queryCount = $em->createQuery('SELECT COUNT(b) FROM AppBundle:blog_post b');
 
+        $numArticles = $queryCount->getResult();
 
-    	return $this->render(
+        return $this->render(
           'blog.html.twig',
           array('blog_entries' => $articles)
           );
