@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2fff5cd-2161-415d-8a8f-1a89d383e57e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/blog_content.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/blog_content.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/2b/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c6572236e756d626572416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/2b/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c6572236e756d626572416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/97/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/97/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
@@ -47,14 +46,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LuckyController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LuckyController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462">
-              <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.66609883">
+              <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
               <folding>
-                <marker date="1460574651504" expanded="true" signature="1336:1349" placeholder="SELECT COUNT..Entity..." />
-                <marker date="1460574651504" expanded="true" signature="1336:1378" placeholder="SELECT COUNT..AppBundle..." />
+                <marker date="1460575287321" expanded="true" signature="1364:1377" placeholder="SELECT COUNT..Entity..." />
+                <marker date="1460575287321" expanded="true" signature="1364:1406" placeholder="SELECT COUNT..AppBundle..." />
               </folding>
             </state>
           </provider>
@@ -80,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_content.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog_content.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/blog_content.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66609883">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            <state vertical-scroll-proportion="-18.307692">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -119,8 +118,8 @@
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/blog.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/blog_body.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/blog_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php" />
       </list>
     </option>
   </component>
@@ -547,7 +546,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460569637536</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed pagination. Alle gut.">
+      <created>1460574887367</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1460574887367</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -607,7 +612,8 @@
     <MESSAGE value="Added &quot;extends&quot; and child template" />
     <MESSAGE value="Added pagination, gotta fix bugs" />
     <MESSAGE value="Added postCount passed from controller.&#10;Pagination broken." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added postCount passed from controller.&#10;Pagination broken." />
+    <MESSAGE value="Fixed pagination. Alle gut." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed pagination. Alle gut." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -689,8 +695,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
           <folding>
-            <marker date="1460574651504" expanded="true" signature="1336:1349" placeholder="SELECT COUNT..Entity..." />
-            <marker date="1460574651504" expanded="true" signature="1336:1378" placeholder="SELECT COUNT..AppBundle..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1377" placeholder="SELECT COUNT..Entity..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1406" placeholder="SELECT COUNT..AppBundle..." />
           </folding>
         </state>
       </provider>
@@ -740,8 +746,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
           <folding>
-            <marker date="1460574651504" expanded="true" signature="1336:1349" placeholder="SELECT COUNT..Entity..." />
-            <marker date="1460574651504" expanded="true" signature="1336:1378" placeholder="SELECT COUNT..AppBundle..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1377" placeholder="SELECT COUNT..Entity..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1406" placeholder="SELECT COUNT..AppBundle..." />
           </folding>
         </state>
       </provider>
@@ -791,8 +797,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
           <folding>
-            <marker date="1460574651504" expanded="true" signature="1336:1349" placeholder="SELECT COUNT..Entity..." />
-            <marker date="1460574651504" expanded="true" signature="1336:1378" placeholder="SELECT COUNT..AppBundle..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1377" placeholder="SELECT COUNT..Entity..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1406" placeholder="SELECT COUNT..AppBundle..." />
           </folding>
         </state>
       </provider>
@@ -850,8 +856,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
           <folding>
-            <marker date="1460574651504" expanded="true" signature="1336:1349" placeholder="SELECT COUNT..Entity..." />
-            <marker date="1460574651504" expanded="true" signature="1336:1378" placeholder="SELECT COUNT..AppBundle..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1377" placeholder="SELECT COUNT..Entity..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1406" placeholder="SELECT COUNT..AppBundle..." />
           </folding>
         </state>
       </provider>
@@ -901,8 +907,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding>
-            <marker date="1460574651504" expanded="true" signature="1336:1349" placeholder="SELECT COUNT..Entity..." />
-            <marker date="1460574651504" expanded="true" signature="1336:1378" placeholder="SELECT COUNT..AppBundle..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1377" placeholder="SELECT COUNT..Entity..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1406" placeholder="SELECT COUNT..AppBundle..." />
           </folding>
         </state>
       </provider>
@@ -996,25 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/blog_body.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
-          <folding>
-            <marker date="1460574651504" expanded="true" signature="1336:1349" placeholder="SELECT COUNT..Entity..." />
-            <marker date="1460574651504" expanded="true" signature="1336:1378" placeholder="SELECT COUNT..AppBundle..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/blog_post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="63.423077">
@@ -1023,11 +1010,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/blog_body.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/blog_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66609883">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66609883">
+          <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
+          <folding>
+            <marker date="1460575287321" expanded="true" signature="1364:1377" placeholder="SELECT COUNT..Entity..." />
+            <marker date="1460575287321" expanded="true" signature="1364:1406" placeholder="SELECT COUNT..AppBundle..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -36,7 +36,7 @@ class LuckyController extends Controller
                         ->setParameter('val', '3')
                         ->orderBy('p.id', 'DESC')     //de mas nuevo a mas viejo
                         ->setFirstResult( $offset )
-                        //->setMaxResults(3)
+                        ->setMaxResults(3)          //max posts per page
                         ->getQuery();
 
         $articles = $query->getResult();
