@@ -44,7 +44,8 @@ class LuckyController extends Controller
         //Get Total
         $queryCount = $em->createQuery('SELECT COUNT(b) FROM AppBundle:blog_post b');
 
-        $numArticles = $queryCount->getResult();
+        //$numArticles = $queryCount->getResult();
+        $numArticles = $queryCount->getSingleScalarResult();
 
         return $this->render(
           'blog_content.html.twig',

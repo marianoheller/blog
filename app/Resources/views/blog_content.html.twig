@@ -21,14 +21,10 @@
 {% endblock %}
 
 {% block pagination %}
-    {% for i in 0..cantArticles %}
-        {% if (i%maxPostsPerPage) == 0 %}
-            {% set auxPagIndex = loop.index0/maxPostsPerPage %}
-            {% if auxPagIndex == 0 %}
-                <li><a href="/blog/{{ auxPagIndex }}" >{{ auxPagIndex }}</a></li>
-            {% else %}
-                <li><a href="/blog/{{auxPagIndex}}" >{{ auxPagIndex }}</a></li>
-            {% endif %}
+    {% for i in 0..(cantArticles-1) %}
+        {% if (i % maxPostsPerPage) == 0 %}
+            {% set auxPagIndex = i/maxPostsPerPage %}
+            <li><a href="/blog/{{auxPagIndex}}" >{{ auxPagIndex }}</a></li>
         {% endif %}
     {% endfor %}
 {% endblock %}
