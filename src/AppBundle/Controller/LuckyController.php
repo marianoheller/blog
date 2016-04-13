@@ -48,7 +48,8 @@ class LuckyController extends Controller
 
         return $this->render(
           'blog_content.html.twig',
-          array('blog_entries' => $articles)
+          array('blog_entries' => $articles,
+              'cantArticles' => $numArticles)
           );
     }
 

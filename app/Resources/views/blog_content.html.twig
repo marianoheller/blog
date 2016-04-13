@@ -1,5 +1,7 @@
 {% extends 'blog_body.html.twig' %}
 
+{% set maxPostsPerPage = 3 %}
+
 {% block posts %}
     {% for entry in blog_entries  %}
         {% if loop.index0 < maxPostsPerPage %}
@@ -19,11 +21,11 @@
 {% endblock %}
 
 {% block pagination %}
-    {% for entry in blog_entries %}
-        {% if (loop.index0%maxPostsPerPage) == 0 %}
+    {% for i in 0..cantArticles %}
+        {% if (i%maxPostsPerPage) == 0 %}
             {% set auxPagIndex = loop.index0/maxPostsPerPage %}
             {% if auxPagIndex == 0 %}
-                <li><a href="/blog" >{{ auxPagIndex }}</a></li>
+                <li><a href="/blog/{{ auxPagIndex }}" >{{ auxPagIndex }}</a></li>
             {% else %}
                 <li><a href="/blog/{{auxPagIndex}}" >{{ auxPagIndex }}</a></li>
             {% endif %}
