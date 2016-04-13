@@ -10,7 +10,7 @@
                 <div class="callout">
                     <ul class="menu simple">
                         <li><a href="#"><p>{{ entry.author }}</p></a></li>
-                        <li><a href="#">Comments: 3</a></li>
+                        <li><a href="#">Comments: {{ random(1,10) }}</a></li>
                     </ul>
                 </div>
             </div>
@@ -22,7 +22,11 @@
     {% for entry in blog_entries %}
         {% if (loop.index0%maxPostsPerPage) == 0 %}
             {% set auxPagIndex = loop.index0/maxPostsPerPage %}
-            <li><a href="#{{auxPagIndex}}" >{{ auxPagIndex }}</a></li>
+            {% if auxPagIndex == 0 %}
+                <li><a href="/blog" >{{ auxPagIndex }}</a></li>
+            {% else %}
+                <li><a href="/blog/{{auxPagIndex}}" >{{ auxPagIndex }}</a></li>
+            {% endif %}
         {% endif %}
     {% endfor %}
 {% endblock %}

@@ -123,8 +123,8 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         // blog
-        if (0 === strpos($pathinfo, '/blog') && preg_match('#^/blog(?:\\.(?P<_format>html))?$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog')), array (  '_format' => 'html',  '_controller' => 'AppBundle\\Controller\\LuckyController::numberAction',));
+        if (0 === strpos($pathinfo, '/blog') && preg_match('#^/blog(?:/(?P<page>\\d+)(?:\\.(?P<_format>html))?)?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog')), array (  '_format' => 'html',  'page' => '0',  '_controller' => 'AppBundle\\Controller\\LuckyController::numberAction',));
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

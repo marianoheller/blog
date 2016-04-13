@@ -11,22 +11,23 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class LuckyController extends Controller
 {
     /**
-     * @Route(	"/blog.{_format}",
+     * @Route(	"/blog/{page}.{_format}",
 	 *     		name="blog",
-	 *     		defaults={"_format":"html"},
+	 *     		defaults={"_format":"html",
+     *                    "page":"0"
+     *                   },
 	 *     		requirements= {
-	 *     			"_format"="html"
+	 *     			"_format"="html",
+     *              "page": "\d+"
 	 * 				}
 	 * 			)
      */
-    public function numberAction()
+    public function numberAction($page)
     {
-
-
         $em = $this->getDoctrine()->getManager();
         $repo = $this->getDoctrine()->getRepository('AppBundle:blog_post');
 
-        $offset = 0;
+        $offset = 3*$page;
 
 
         //GET POSTS
