@@ -1,0 +1,36 @@
+{% extends 'blog_body.html.twig' %}
+
+{% block posts %}
+    {% for entry in blog_entries  %}
+        {% if loop.index0 < maxPostsPerPage %}
+            <div class="blog-post">
+                <h3>{{ entry.title }} <small>{{ entry.date.format('d-m-Y') }}</small></h3>
+                <img class="thumbnail" src={{ entry.image }}>
+                <p>{{ entry.body }}</p>
+                <div class="callout">
+                    <ul class="menu simple">
+                        <li><a href="#"><p>{{ entry.author }}</p></a></li>
+                        <li><a href="#">Comments: 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% block pagination %}
+    {% for entry in blog_entries %}
+        {% if (loop.index0%maxPostsPerPage) == 0 %}
+            {% set auxPagIndex = loop.index0/maxPostsPerPage %}
+            <li><a href="#{{auxPagIndex}}" >{{ auxPagIndex }}</a></li>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{#<li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+<li><a href="#" >2</a></li>
+<li><a href="#" >3</a></li>
+<li><a href="#" >4</a></li>
+<li class="ellipsis"></li>
+<li><a href="#" >12</a></li>
+<li><a href="#" >13</a></li>#}
