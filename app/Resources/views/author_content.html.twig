@@ -1,0 +1,25 @@
+{% extends 'blog_body.html.twig' %}
+
+{% block posts %}
+    <ul>
+        {% for author in authorsArray  %}
+            <li>{{ author.getName() }}</a></li>
+            <ul>
+                <li> Mail: {{ author.getMail() }}</li>
+                <li> Last post: {{ author.getLastPostDate().format('d-m-Y') }}</li>
+            </ul>
+            <p> </p>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
+{% block authorList %}
+    {% for author in allAuthorsArray  %}
+        <li><a href="/blog/a/{{ author.getName() }}">{{ author.getName() }}</a></li>
+    {%  endfor %}
+    {#<li><a href="#">Skyler</a></li>
+    <li><a href="#">Jesse</a></li>
+    <li><a href="#">Mike</a></li>
+    <li><a href="#">Holly</a></li>#}
+{% endblock %}

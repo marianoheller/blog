@@ -18,7 +18,7 @@ class LuckyController extends Controller
      *                   },
 	 *     		requirements= {
 	 *     			"_format"="html",
-     *              "page": "\d+"
+     *              "page": "p.\d+"
 	 * 				}
 	 * 			)
      */
@@ -26,10 +26,12 @@ class LuckyController extends Controller
     {
         $maxPostsPerPage = 3;
 
+        $pag = intval (str_replace('p/','',$page));
+
         //GET POSTS
         $em = $this->getDoctrine()->getManager();
         $repo = $this->getDoctrine()->getRepository('AppBundle:blog_post');
-        $offset = $maxPostsPerPage*$page;
+        $offset = $maxPostsPerPage*$pag;
         $query = $repo->createQueryBuilder('p')
                         ->where('LENGTH(p.body) > :val')
                         ->setParameter('val', '3')
@@ -56,4 +58,45 @@ class LuckyController extends Controller
           );
     }
 
+    /**
+     * @Route(	"/blog/a/{author}.{_format}",
+     *     		name="author",
+     *     		defaults={"_format":"html",
+     *                    "author":"all"
+     *                   },
+     *     		requirements= {
+     *     			"_format"="html",
+     * 				}
+     * 			)
+     */
+    public function authorAction($author)
+    {
+        if ($author == "all") {
+            $repo = $this->getDoctrine()->getRepository('AppBundle:Author');
+            $query = $repo->createQueryBuilder('a')
+                ->where('LENGTH(a.name) > :val')
+                ->setParameter('val', '0' )
+                ->getQuery();
+        }
+        else {
+            $repo = $this->getDoctrine()->getRepository('AppBundle:Author');
+            $query = $repo->createQueryBuilder('a')
+                ->where('a.name = :val')
+                ->setParameter('val', $author )
+                ->getQuery();
+        }
+        $authorsArray = $query->getResult();
+
+        //Get Authors
+        $em = $this->getDoctrine()->getManager();
+        $queryCount = $em->createQuery('SELECT a FROM AppBundle:Author a ORDER BY a.name ASC');
+        $allAuthorsArray = $queryCount->getResult();
+
+        return $this->render(
+            'author_content.html.twig',
+            array('authorsArray' => $authorsArray,
+                'allAuthorsArray' => $allAuthorsArray
+            )
+        );
+    }
 }

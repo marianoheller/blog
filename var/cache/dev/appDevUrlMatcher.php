@@ -127,9 +127,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // blog
-        if (0 === strpos($pathinfo, '/blog') && preg_match('#^/blog(?:/(?P<page>\\d+)(?:\\.(?P<_format>html))?)?$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog')), array (  '_format' => 'html',  'page' => '0',  '_controller' => 'AppBundle\\Controller\\LuckyController::numberAction',));
+        if (0 === strpos($pathinfo, '/blog')) {
+            // blog
+            if (preg_match('#^/blog(?:/(?P<page>p.\\d+)(?:\\.(?P<_format>html))?)?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog')), array (  '_format' => 'html',  'page' => '0',  '_controller' => 'AppBundle\\Controller\\LuckyController::numberAction',));
+            }
+
+            // author
+            if (0 === strpos($pathinfo, '/blog/a') && preg_match('#^/blog/a(?:/(?P<author>[^/\\.]++)(?:\\.(?P<_format>html))?)?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'author')), array (  '_format' => 'html',  'author' => 'all',  '_controller' => 'AppBundle\\Controller\\LuckyController::authorAction',));
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
