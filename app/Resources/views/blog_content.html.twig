@@ -11,7 +11,7 @@
                 <p>{{ entry.body }}</p>
                 <div class="callout">
                     <ul class="menu simple">
-                        <li><a href="#"><p>{{ entry.author }}</p></a></li>
+                        <li><a href="/blog/a/{{ entry.author }}"><p>{{ entry.author }}</p></a></li>
                         <li><a href="#">Comments: {{ random(1,10) }}</a></li>
                     </ul>
                 </div>
@@ -30,7 +30,6 @@
             {% else %}
                 <li><a href="/blog/p/{{auxPagIndex}}" >{{ auxPagIndex }}</a></li>
             {% endif %}
-
         {% endif %}
     {% endfor %}
     <li><a href="#" >Next</a></li>

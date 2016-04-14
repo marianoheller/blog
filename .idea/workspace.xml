@@ -5,17 +5,409 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2fff5cd-2161-415d-8a8f-1a89d383e57e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/author_content.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/2d/5b41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c6572236e756d626572416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/2d/5b41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c6572236e756d626572416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/66/5b41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c657223686f6d65416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/83/5b41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c657223617574686f72416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/c5/5b41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c657223736574417574686f7273416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/00/d4/5dd400" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/00/ea/d1ea00" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/01/50/c05001" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/03/36/563603" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/03/dc/fddc03" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/05/d9/28d905" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/06/dc/57dc06" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/08/af/d4af08" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/09/32/873209" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/09/48/2b4809" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/0a/0d/260d0a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/0a/43/bc430a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/0b/06/e1060b" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/0c/01/55010c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/0d/4c/f44c0d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/0e/82/06820e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/0e/d9/e1d90e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/10/66/326610" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/10/cc/f9cc10" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/10/fd/a6fd10" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/11/81/e38111" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/13/3d/3c3d13" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/13/42/b74213" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/13/4b/f74b13" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/14/3d/183d14" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/14/da/3fda14" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/14/f9/a8f914" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/15/46/a24615" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/17/98/6f9817" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/1b/ac/88ac1b" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/1c/9b/339b1c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/1e/37/bf371e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/20/3f/fd3f20" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/20/55/8b5520" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/20/6b/136b20" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/20/90/e99020" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/21/43/b04321" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/22/ab/8bab22" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/22/c4/f3c422" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/24/66/776624" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/24/e1/92e124" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/26/7f/f97f26" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/27/57/b55727" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/28/43/224328" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/2a/cb/eccb2a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/2a/dc/75dc2a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/2c/a1/3ea12c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/2e/ac/65ac2e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/32/3f/743f32" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/32/f2/36f232" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/33/0c/fc0c33" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/33/e9/f2e933" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/34/84/758434" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/36/8c/2c8c36" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/37/27/302737" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/37/79/5f7937" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/39/85/f38539" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/3a/17/c7173a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/3a/b7/4fb73a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/3b/9e/709e3b" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/3d/42/25423d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/3d/d4/d0d43d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/3e/9c/b19c3e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/40/5e/585e40" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/40/d2/99d240" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/40/da/63da40" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/41/11/4c1141" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/41/fb/fefb41" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/43/2d/d32d43" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/47/64/966447" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/47/69/b56947" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/48/43/f84348" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/4a/36/06364a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/4d/30/a5304d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/4d/a1/39a14d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/4d/a3/d1a34d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/4f/d2/04d24f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/50/cc/20cc50" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/51/ee/4fee51" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/52/8a/1c8a52" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/53/d3/8ad353" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/55/b2/59b255" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/56/ea/94ea56" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/57/69/346957" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/57/b5/91b557" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/59/49/554959" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/5c/7f/877f5c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/5d/e3/60e35d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/5e/0e/fa0e5e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/5f/e6/cfe65f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/62/2f/bf2f62" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/63/16/3e1663" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/63/20/192063" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/63/b5/acb563" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/64/a9/eca964" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/65/d7/e2d765" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6a/17/89176a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6a/39/ac396a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6a/75/ff756a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6b/26/0a266b" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6b/78/84786b" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6b/ad/f5ad6b" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6c/4e/b74e6c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6d/3d/ea3d6d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6d/48/68486d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6d/72/cb726d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6d/de/a4de6d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6d/f3/08f36d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6d/f4/78f46d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/6f/c9/8ec96f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/70/2d/6a2d70" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/70/af/dcaf70" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/70/c5/cfc570" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/71/14/181471" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/71/53/255371" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/71/d7/dad771" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/73/2b/562b73" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/73/6c/1d6c73" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/73/83/038373" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/75/7c/c87c75" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/75/c8/38c875" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/76/8e/f38e76" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/76/ff/58ff76" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/77/54/a65477" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/77/57/615777" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/79/60/1d6079" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/7b/fc/7efc7b" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/7c/47/b8477c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/7e/05/1d057e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/7e/f3/aef37e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/7f/22/95227f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/80/b7/3bb780" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/81/a0/80a081" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/81/af/50af81" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/84/11/921184" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/84/68/bb6884" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/84/87/e78784" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/84/a5/a1a584" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/85/4b/204b85" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/85/fe/0efe85" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/89/ec/95ec89" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/8a/10/50108a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/8a/4a/de4a8a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/8b/99/19998b" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/8d/c8/c2c88d" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/8f/8e/608e8f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/92/e1/87e192" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/92/e2/f2e292" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/93/25/4a2593" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/93/38/623893" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/93/4b/d24b93" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/93/61/3e6193" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/94/cf/8bcf94" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/95/4d/da4d95" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/95/e6/9ae695" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/95/f5/30f595" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/97/29/5a2997" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/98/18/721898" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/99/1e/d61e99" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/9a/19/d0199a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/9c/1d/a61d9c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/9c/3e/ce3e9c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/a3/05/6405a3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/a4/77/dc77a4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/a5/27/9a27a5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/a5/5f/815fa5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/a6/ba/0abaa6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/a8/05/9405a8" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/a9/3b/743ba9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/a9/3c/013ca9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ad/04/6e04ad" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ad/ef/32efad" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ae/90/3c90ae" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ae/b8/a1b8ae" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ae/c2/c4c2ae" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/b0/3a/183ab0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/b0/ac/1eacb0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/b1/8e/5b8eb1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/b2/83/c383b2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/b2/b7/acb7b2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/b3/d3/99d3b3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/b3/ea/17eab3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/b6/15/8d15b6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/b6/3f/983fb6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ba/75/3675ba" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/bb/3d/c53dbb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/bb/b3/2eb3bb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/bb/bd/a7bdbb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/bb/c8/cac8bb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/bc/0b/850bbc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/bc/60/4860bc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/bd/81/0f81bd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/be/bc/b2bcbe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/bf/1c/4b1cbf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/bf/44/b744bf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/bf/a2/c3a2bf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/c1/6d/d56dc1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/c5/28/8f28c5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/c6/94/0494c6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/c8/d1/d0d1c8" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/c9/95/1495c9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/c9/9c/6d9cc9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/cb/74/c974cb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/cc/49/6049cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/cd/08/1d08cd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/cd/5f/9d5fcd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/cf/4f/c24fcf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/cf/b1/d5b1cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d0/3c/b53cd0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d1/28/c328d1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d1/3f/5c3fd1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d1/49/9a49d1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d2/7a/997ad2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d3/38/8c38d3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d5/42/4b42d5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d5/52/6852d5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d6/db/a4dbd6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d9/2e/502ed9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/d9/5f/fa5fd9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/da/14/9e14da" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/da/7a/f97ada" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/db/3a/d23adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/dc/ca/7acadc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/dd/10/ea10dd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/dd/e2/f4e2dd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/de/c8/8ac8de" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/e0/bd/bdbde0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/e0/db/9fdbe0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/e1/34/2e34e1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/e2/3a/373ae2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/e3/4c/714ce3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/e5/eb/ecebe5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/e9/74/6274e9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/e9/f4/89f4e9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ea/0d/3c0dea" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ea/8c/a98cea" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ea/dc/4adcea" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ea/ed/44edea" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/eb/80/fe80eb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ed/c6/43c6ed" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ef/33/7533ef" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f0/f0/35f0f0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f2/10/e510f2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f2/bf/d1bff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f3/50/9f50f3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f3/df/1ddff3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f5/38/1f38f5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f7/9c/6b9cf7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f7/a6/9ca6f7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f7/f2/ecf2f7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f8/83/f283f8" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f9/0e/440ef9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/f9/3a/2e3af9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/fa/50/ec50fa" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/fa/e0/fde0fa" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/fb/94/5494fb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/fc/e3/42e3fc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/fe/3d/c93dfe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/fe/52/2352fe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/fe/82/ee82fe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ff/0c/2b0cff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/ff/23/6923ff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_13_04_16_16_02_c.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.3.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Author.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/AuthorRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/04/5b5b435d41707042756e646c655c456e746974795c417574686f72405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/13/5b5b435d41707042756e646c655c456e746974795c417574686f72246e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/1a/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c657223617574686f72416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/28/5b41707042756e646c655c456e746974795c417574686f72246d61696c405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/65/5b5b435d41707042756e646c655c456e746974795c417574686f72246c617374506f737444617465405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/7d/5b41707042756e646c655c456e746974795c417574686f72246964405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/92/5b41707042756e646c655c456e746974795c417574686f72405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/92/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c657223686f6d65416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/aa/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c657223736574417574686f7273416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/d3/5b41707042756e646c655c456e746974795c417574686f72246e616d65405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/df/5b41707042756e646c655c456e746974795c417574686f72246c617374506f737444617465405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/e2/5b5b435d41707042756e646c655c456e746974795c417574686f72246964405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/e5/5b5b435d41707042756e646c655c456e746974795c417574686f72246d61696c405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/1e/1e869ec604e83ab6c582fc806276b396a74a0e1fadb02b63f980424df59c6004.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/6e/6e6dd04e57d100626ea8af7694d6e4899477cdb54c675d383b648f12635856d4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/8a/8ad4df59d9a1ab188b03240e6b49ca16e9e7f463300221e812a026b9c05b8f1b.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/cc/cc3d39c2cb720dee7709d6ad79ef6ceba7c17c66c3901c481a8132e0e895712d.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/var/cache/dev/twig/ee/ee79f9305733d67f15c2b4345204cdd7f86be7272c960b2628e87bcb4bf3e1f2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/AutoComplete/EntitiesAutoCompleter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/GenerateBundleCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/GenerateCommandCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/GenerateControllerCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/GenerateDoctrineCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/GenerateDoctrineCrudCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/GenerateDoctrineEntityCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/GenerateDoctrineFormCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/GeneratorCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/Helper/QuestionHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Command/Validators.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Generator/BundleGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Generator/CommandGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Generator/ControllerGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Generator/DoctrineCrudGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Generator/DoctrineEntityGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Generator/DoctrineFormGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Generator/Generator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Manipulator/ConfigurationManipulator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Manipulator/KernelManipulator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Manipulator/Manipulator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Manipulator/RoutingManipulator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Model/Bundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Model/EntityGeneratorResult.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/doc/commands/generate_bundle.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/doc/commands/generate_command.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/doc/commands/generate_controller.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/doc/commands/generate_doctrine_crud.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/doc/commands/generate_doctrine_entity.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/doc/commands/generate_doctrine_form.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/doc/index.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/Bundle.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/Configuration.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/DefaultController.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/DefaultControllerTest.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/Extension.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/index.html.twig.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/routing.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/routing.xml.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/routing.yml.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/services.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/services.xml.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/bundle/services.yml.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/command/Command.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/controller/Controller.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/controller/ControllerTest.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/controller/Template.html.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/controller/Template.html.twig.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/actions/delete.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/actions/edit.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/actions/index.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/actions/new.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/actions/show.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/config/routing.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/config/routing.xml.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/config/routing.yml.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/controller.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/tests/others/full_scenario.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/tests/others/short_scenario.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/tests/test.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/edit.html.twig.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/index.html.twig.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/new.html.twig.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/others/record_actions.html.twig.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/show.html.twig.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/form/FormType.php.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/SensioGeneratorBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Command/AutoComplete/EntitiesAutoCompleterTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Command/GenerateBundleCommandTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Command/GenerateCommandCommandTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Command/GenerateCommandTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Command/GenerateControllerCommandTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Command/GenerateDoctrineCrudCommandTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Command/GenerateDoctrineEntityCommandTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Generator/BundleGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Generator/CommandGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Generator/ControllerGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Generator/DoctrineCrudGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Generator/DoctrineEntityGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Generator/DoctrineFormGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Generator/GeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/ConfigurationManipulatorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/KernelManipulatorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/RoutingManipulatorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/ContainsBundlesKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/ContainsBundlesShortArraySyntaxKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/ContainsCommaKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/ContainsCommaShortArraySyntaxKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/ContainsExtraCodeKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/ContainsExtraCodeShortArraySyntaxKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/EmptyBundlesKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/EmptyBundlesMultilineKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/EmptyBundlesMultilineShortArraySyntaxKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/EmptyBundlesShortArraySyntaxKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/StubBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Tests/Manipulator/Stubs/UsingShortArraySyntaxKernelStub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/sensio/generator-bundle/phpunit.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/ClockMock.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/DeprecationErrorHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/SymfonyTestsListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/TextUI/Command.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/TextUI/TestRunner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/symfony/phpunit-bridge/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/blog_body.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/blog_body.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/author_content.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/author_content.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/blog_content.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/blog_content.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/2b/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c6572236e756d626572416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/2b/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c6572236e756d626572416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/97/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/97/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c4c75636b79436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
     </list>
@@ -47,7 +439,7 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
+            <state vertical-scroll-proportion="0.0">
               <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
               <folding>
                 <element signature="e#40#71#0#PHP" expanded="true" />
@@ -59,7 +451,7 @@
       <file leaf-file-name="LuckyController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3076923">
+            <state vertical-scroll-proportion="0.0">
               <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
               <folding>
                 <marker date="1460653709493" expanded="true" signature="1498:1511" placeholder="SELECT COUNT..Entity..." />
@@ -71,11 +463,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_body.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog_body.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/blog_body.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.30323678">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -84,18 +476,18 @@
       <file leaf-file-name="Author.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Author.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847">
+            <state vertical-scroll-proportion="0.0">
               <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_content.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blog_content.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/blog_content.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307">
-              <caret line="30" column="55" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.86882454">
+              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -104,8 +496,8 @@
       <file leaf-file-name="author_content.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/author_content.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -132,9 +524,9 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Author.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/blog_body.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/blog_content.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/author_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/blog_body.html.twig" />
       </list>
     </option>
   </component>
@@ -216,7 +608,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -469,6 +860,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -613,7 +1005,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460582683440</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added authors pages &amp; links to each one on the right side bar.&#10;Falta links de autores en los posts">
+      <created>1460653963862</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1460653963862</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -631,11 +1029,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33019853" sideWeight="0.53125" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33019853" sideWeight="0.53333336" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33019853" sideWeight="0.46875" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33019853" sideWeight="0.46666667" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.4875" order="7" side_tool="false" content_ui="tabs" />
@@ -678,7 +1076,8 @@
     <MESSAGE value="Added Authors database" />
     <MESSAGE value="Added: When a post is added, its generated with an author from the database.&#10;&#10;TODO: Todo el tema Comments&#10;" />
     <MESSAGE value="Added author database Query when listing authors on right side panel.&#10;&#10;TODO: Todo el tema Comments&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added author database Query when listing authors on right side panel.&#10;&#10;TODO: Todo el tema Comments&#10;" />
+    <MESSAGE value="Added authors pages &amp; links to each one on the right side bar.&#10;Falta links de autores en los posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added authors pages &amp; links to each one on the right side bar.&#10;Falta links de autores en los posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -691,7 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -772,7 +1170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,7 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,7 +1281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +1333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,13 +1448,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55025554">
           <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
@@ -1069,33 +1461,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/author_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Author.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847">
-          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/blog_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3076923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
           <folding>
             <marker date="1460653709493" expanded="true" signature="1498:1511" placeholder="SELECT COUNT..Entity..." />
@@ -1106,10 +1474,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/author_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/blog_body.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.30323678">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Author.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/blog_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86882454">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding />
         </state>
       </provider>

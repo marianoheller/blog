@@ -1,16 +1,20 @@
 {% extends 'blog_body.html.twig' %}
 
 {% block posts %}
-    <ul>
-        {% for author in authorsArray  %}
-            <li>{{ author.getName() }}</a></li>
-            <ul>
-                <li> Mail: {{ author.getMail() }}</li>
-                <li> Last post: {{ author.getLastPostDate().format('d-m-Y') }}</li>
-            </ul>
-            <p> </p>
-        {% endfor %}
-    </ul>
+    {% if authorsArray is empty %}
+        <p> Author not found!</p>
+    {% else %}
+        <ul>
+            {% for author in authorsArray  %}
+                <li>{{ author.getName() }}</a></li>
+                <ul>
+                    <li> Mail: {{ author.getMail() }}</li>
+                    <li> Last post: {{ author.getLastPostDate().format('d-m-Y') }}</li>
+                </ul>
+                <p> </p>
+            {% endfor %}
+        </ul>
+    {% endif %}
 {% endblock %}
 
 
