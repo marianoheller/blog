@@ -35,62 +35,10 @@ class DefaultController extends Controller
      * @Route("/cmd/addPost" , name="addPost")
      */
 
-    public function createAction()
+    public function createPostAction()
     {
-        $blog_post = new blog_post();
-
-        //Title
-        $url='http://loripsum.net/api/2/short';
-        $lines_array=file($url);
-        $lines_string=implode('',$lines_array);
-        $crawler = new Crawler($lines_string);
-        $text = $crawler->filter('body > p')->last()->text();
-        $text=str_replace(', ','',$text);
-        $text=str_replace('. ','',$text);
-        $blog_post->setTitle(trim($text));
-
-        //Body
-        $url='http://loripsum.net/api';
-        $lines_array=file($url);
-        $lines_string=implode('',$lines_array);
-        $crawler = new Crawler($lines_string);
-        $nodeValues = $crawler->filter('body > p')->each(function (Crawler $node, $i) {
-            return $node->text();
-        });
-        $text = implode("<br/>",$nodeValues);
-        $blog_post->setBody($text);
-
-        //Author
-        /*$url='http://loripsum.net/api/2/short';
-        $lines_array=file($url);
-        $lines_string=implode('',$lines_array);
-        $crawler = new Crawler($lines_string);
-        $text = $crawler->filter('body > p')->last()->text();
-        $text=str_replace(', ','',$text);
-        $text=str_replace('. ','',$text);
-        $blog_post->setAuthor(trim(substr($text,0,rand(5,12))));*/
-        $repo = $this->getDoctrine()->getRepository('AppBundle:Author');
-        $query = $repo->createQueryBuilder('a')
-            ->where('LENGTH(a.name) > :val')
-            ->setParameter('val', '1')
-            ->getQuery();
-        $authorsArray = $query->getResult();
-        $author = $authorsArray[random_int(0, sizeof($authorsArray)-1)];
-        $blog_post->setAuthor($author->getName());
-
-
-        //DateTime
-        $d1=new \DateTime();
-        $blog_post->setDate($d1);
-
-        //Image
-        $imagePath = 'https://unsplash.it/850/350?image='.rand(0,100);
-        $blog_post->setImage($imagePath);
-
-        //Push data
-        $em = $this->getDoctrine()->getManager();
-        $em->persist($blog_post);
-        $em->flush();
+        $blog_post = $this->generatePost();
+        $this->savePostInDB($blog_post);
         return new Response('Created blog post id '.$blog_post->getId());
     }
 
@@ -101,17 +49,8 @@ class DefaultController extends Controller
 
     public function clearAction()
     {
-        $em = $this->getDoctrine()->getManager();
-        $repo = $this->getDoctrine()->getRepository('AppBundle:blog_post');
-
-
-        $query = $repo->createQueryBuilder('p');   
-        $query->delete();
-        // $query->where('p.author = :Val');
-        // $query->setParameter('Val', 'Lorem ipsum');
-        $query->getQuery()->execute();
-        $em->flush();
-        return $this->redirectToRoute('addPost');
+        $this->clearAllPosts();
+        return new Response("All posts deleted");
     }
 
     /**
@@ -119,48 +58,15 @@ class DefaultController extends Controller
      */
     public function setAuthorsAction()
     {
-        $em = $this->getDoctrine()->getManager();
-        $repo = $this->getDoctrine()->getRepository('AppBundle:Author');
-        $query = $repo->createQueryBuilder('p');
-        $query->delete();
-        $query->getQuery()->execute();
-        $em->flush();
+        $this->clearAllAuthors();
 
-        $author = new Author();
-        $author->setName("Skyler");
-        $author->setMail("skyler@gmail.com");
-        $d1=new \DateTime();
-        $author->setLastPostDate($d1);
-        //Push data
-        $em->persist($author);
-        $em->flush();
-
-        $author = new Author();
-        $author->setName("Jesse");
-        $author->setMail("jesse@gmail.com");
-        $d1=new \DateTime();
-        $author->setLastPostDate($d1);
-        //Push data
-        $em->persist($author);
-        $em->flush();
-
-        $author = new Author();
-        $author->setName("Mike");
-        $author->setMail("mike@gmail.com");
-        $d1=new \DateTime();
-        $author->setLastPostDate($d1);
-        //Push data
-        $em->persist($author);
-        $em->flush();
-
-        $author = new Author();
-        $author->setName("Molly");
-        $author->setMail("molly@gmail.com");
-        $d1=new \DateTime();
-        $author->setLastPostDate($d1);
-        //Push data
-        $em->persist($author);
-        $em->flush();
+        //CREATE AUTHORS
+        $authorsArray = unserialize(Authors);
+        for ($i=0 ; $i<sizeof($authorsArray) ; $i++)
+        {
+            $author = $this->generateAuthor($i);
+            $this->saveAuthorInDB($author);
+        }
 
         return new Response("Authors created");
     }
@@ -198,6 +104,17 @@ class DefaultController extends Controller
         //REPORT
         return new Response("Blog initialized");
     }
+
+
+
+//    =================================================================================================
+//
+//    PRIVATE FUNCTIONS
+//
+//    =================================================================================================
+
+
+
 
     private function generatePost()
     {
