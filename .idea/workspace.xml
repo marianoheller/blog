@@ -11,8 +11,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/40/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c657223636c656172416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/40/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c657223636c656172416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/95/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/95/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/aa/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c657223736574417574686f7273416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/aa/5b5b435d41707042756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c657223736574417574686f7273416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
     </list>
@@ -54,14 +52,14 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40545145">
-              <caret line="41" column="73" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.43441227">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
                 <element signature="e#40#71#0#PHP" expanded="true" />
-                <element signature="e#4247#4265#1#PHP" expanded="true" />
-                <element signature="e#5154#5175#1#PHP" expanded="true" />
-                <element signature="e#5570#5588#1#PHP" expanded="true" />
-                <marker date="1460752686215" expanded="true" signature="2492:3033" placeholder="..." />
+                <element signature="e#4414#4432#1#PHP" expanded="true" />
+                <element signature="e#5321#5342#1#PHP" expanded="true" />
+                <element signature="e#5737#5755#1#PHP" expanded="true" />
+                <marker date="1460753346324" expanded="true" signature="2539:3200" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -70,7 +68,7 @@
       <file leaf-file-name="LuckyController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.115385">
+            <state vertical-scroll-proportion="-32.03846">
               <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
               <folding>
                 <marker date="1460752087144" expanded="true" signature="1500:1513" placeholder="SELECT COUNT..Entity..." />
@@ -457,7 +455,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460752307212</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added comments &amp; separators">
+      <created>1460752930857</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1460752930857</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -525,7 +529,8 @@
     <MESSAGE value="Added authors pages &amp; links to each one on the right side bar.&#10;Falta links de autores en los posts" />
     <MESSAGE value="Still testing sublime git" />
     <MESSAGE value="Created private helper functions inside controller.&#10;Also created /cmd/init command for blog initialization." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created private helper functions inside controller.&#10;Also created /cmd/init command for blog initialization." />
+    <MESSAGE value="Added comments &amp; separators" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments &amp; separators" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -609,10 +614,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
-            <element signature="e#4247#4265#1#PHP" expanded="true" />
-            <element signature="e#5154#5175#1#PHP" expanded="true" />
-            <element signature="e#5570#5588#1#PHP" expanded="true" />
-            <marker date="1460752686215" expanded="true" signature="2492:3033" placeholder="..." />
+            <element signature="e#4414#4432#1#PHP" expanded="true" />
+            <element signature="e#5321#5342#1#PHP" expanded="true" />
+            <element signature="e#5737#5755#1#PHP" expanded="true" />
+            <marker date="1460753346324" expanded="true" signature="2539:3200" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -664,10 +669,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
-            <element signature="e#4247#4265#1#PHP" expanded="true" />
-            <element signature="e#5154#5175#1#PHP" expanded="true" />
-            <element signature="e#5570#5588#1#PHP" expanded="true" />
-            <marker date="1460752686215" expanded="true" signature="2492:3033" placeholder="..." />
+            <element signature="e#4414#4432#1#PHP" expanded="true" />
+            <element signature="e#5321#5342#1#PHP" expanded="true" />
+            <element signature="e#5737#5755#1#PHP" expanded="true" />
+            <marker date="1460753346324" expanded="true" signature="2539:3200" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -726,10 +731,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
-            <element signature="e#4247#4265#1#PHP" expanded="true" />
-            <element signature="e#5154#5175#1#PHP" expanded="true" />
-            <element signature="e#5570#5588#1#PHP" expanded="true" />
-            <marker date="1460752686215" expanded="true" signature="2492:3033" placeholder="..." />
+            <element signature="e#4414#4432#1#PHP" expanded="true" />
+            <element signature="e#5321#5342#1#PHP" expanded="true" />
+            <element signature="e#5737#5755#1#PHP" expanded="true" />
+            <marker date="1460753346324" expanded="true" signature="2539:3200" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -781,10 +786,10 @@
           <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
-            <element signature="e#4247#4265#1#PHP" expanded="true" />
-            <element signature="e#5154#5175#1#PHP" expanded="true" />
-            <element signature="e#5570#5588#1#PHP" expanded="true" />
-            <marker date="1460752686215" expanded="true" signature="2492:3033" placeholder="..." />
+            <element signature="e#4414#4432#1#PHP" expanded="true" />
+            <element signature="e#5321#5342#1#PHP" expanded="true" />
+            <element signature="e#5737#5755#1#PHP" expanded="true" />
+            <marker date="1460753346324" expanded="true" signature="2539:3200" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -940,7 +945,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.115385">
+        <state vertical-scroll-proportion="-32.03846">
           <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
           <folding>
             <marker date="1460752087144" expanded="true" signature="1500:1513" placeholder="SELECT COUNT..Entity..." />
@@ -953,14 +958,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40545145">
-          <caret line="41" column="73" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.43441227">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
-            <element signature="e#4247#4265#1#PHP" expanded="true" />
-            <element signature="e#5154#5175#1#PHP" expanded="true" />
-            <element signature="e#5570#5588#1#PHP" expanded="true" />
-            <marker date="1460752686215" expanded="true" signature="2492:3033" placeholder="..." />
+            <element signature="e#4414#4432#1#PHP" expanded="true" />
+            <element signature="e#5321#5342#1#PHP" expanded="true" />
+            <element signature="e#5737#5755#1#PHP" expanded="true" />
+            <marker date="1460753346324" expanded="true" signature="2539:3200" placeholder="..." />
           </folding>
         </state>
       </provider>

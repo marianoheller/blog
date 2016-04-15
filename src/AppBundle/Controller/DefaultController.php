@@ -26,9 +26,10 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
+        /*return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
-        ]);
+        ]);*/
+        return $this->redirectToRoute('blog');
     }
 
     /**
@@ -89,20 +90,23 @@ class DefaultController extends Controller
 
         //CREATE AUTHORS
         $authorsArray = unserialize(Authors);
-        for ($i=0 ; $i<sizeof($authorsArray) ; $i++)
-        {
+        for ($i = 0; $i < sizeof($authorsArray); $i++) {
             $author = $this->generateAuthor($i);
             $this->saveAuthorInDB($author);
         }
         //CREATE POSTS
-        for ($i=0 ; $i<cantPostsAtInit ; $i++)
-        {
+        for ($i = 0; $i < cantPostsAtInit; $i++) {
             $blog_post = $this->generatePost();
             $this->savePostInDB($blog_post);
         }
 
         //REPORT
-        return new Response("Blog initialized");
+
+        $response = new Response("Blog initialized");
+
+        $response->setStatusCode(200);
+        $response->headers->set('Refresh', '5; /blog');
+        return $response;
     }
 
 
