@@ -14,6 +14,10 @@ use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\CssSelector\CssSelectorConverter;
 
 
+const cantPostsAtInit = 10;
+define ("Authors", serialize (array ("Jesse", "Mike", "Molly","Skyler")));
+
+
 class DefaultController extends Controller
 {
     /**
@@ -160,15 +164,153 @@ class DefaultController extends Controller
 
         return new Response("Authors created");
     }
-}
 
     /**
-     * @Route(  "/showProduct/{id}",
-                requirements={
-                    "id":"\d+"
-                }
-            )
-     */
+     * @Route ("/cmd/init.{_format}",
+     *          defaults={"_format":"html"
+     *                   },
+     *     		requirements= {
+     *     			"_format"="html"
+     * 				}
+     *     )
+    */
+
+    public function initializeBlogAction()
+    {
+        //CLEAR ALL AUTHORS AND POSTS
+        $this->clearAllPosts();
+        $this->clearAllAuthors();
+
+        //CREATE AUTHORS
+        $authorsArray = unserialize(Authors);
+        for ($i=0 ; $i<sizeof($authorsArray) ; $i++)
+        {
+            $author = $this->generateAuthor($i);
+            $this->saveAuthorInDB($author);
+        }
+        //CREATE POSTS
+        for ($i=0 ; $i<cantPostsAtInit ; $i++)
+        {
+            $blog_post = $this->generatePost();
+            $this->savePostInDB($blog_post);
+        }
+
+        //REPORT
+        return new Response("Blog initialized");
+    }
+
+    private function generatePost()
+    {
+        $blog_post = new blog_post();
+
+        //Title
+        $url='http://loripsum.net/api/2/short';
+        $lines_array=file($url);
+        $lines_string=implode('',$lines_array);
+        $crawler = new Crawler($lines_string);
+        $text = $crawler->filter('body > p')->last()->text();
+        $text=str_replace(', ','',$text);
+        $text=str_replace('. ','',$text);
+        $blog_post->setTitle(trim($text));
+
+        //Body
+        $url='http://loripsum.net/api';
+        $lines_array=file($url);
+        $lines_string=implode('',$lines_array);
+        $crawler = new Crawler($lines_string);
+        $nodeValues = $crawler->filter('body > p')->each(function (Crawler $node, $i) {
+            return $node->text();
+        });
+        $text = implode("<br/>",$nodeValues);
+        $blog_post->setBody($text);
+
+        //Author
+        /*$url='http://loripsum.net/api/2/short';
+        $lines_array=file($url);
+        $lines_string=implode('',$lines_array);
+        $crawler = new Crawler($lines_string);
+        $text = $crawler->filter('body > p')->last()->text();
+        $text=str_replace(', ','',$text);
+        $text=str_replace('. ','',$text);
+        $blog_post->setAuthor(trim(substr($text,0,rand(5,12))));*/
+        $repo = $this->getDoctrine()->getRepository('AppBundle:Author');
+        $query = $repo->createQueryBuilder('a')
+            ->where('LENGTH(a.name) > :val')
+            ->setParameter('val', '1')
+            ->getQuery();
+        $authorsArray = $query->getResult();
+        $author = $authorsArray[random_int(0, sizeof($authorsArray)-1)];
+        $blog_post->setAuthor($author->getName());
+
+
+        //DateTime
+        $d1=new \DateTime();
+        $blog_post->setDate($d1);
+
+        //Image
+        $imagePath = 'https://unsplash.it/850/350?image='.rand(0,100);
+        $blog_post->setImage($imagePath);
+
+        return $blog_post;
+    }
+
+    private function savePostInDB($blog_post)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($blog_post);
+        $em->flush();
+    }
+
+    private function clearAllPosts()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $repo = $this->getDoctrine()->getRepository('AppBundle:blog_post');
+
+
+        $query = $repo->createQueryBuilder('p');
+        $query->delete();
+        // $query->where('p.author = :Val');
+        // $query->setParameter('Val', 'Lorem ipsum');
+        $query->getQuery()->execute();
+        $em->flush();
+    }
+
+    private function clearAllAuthors()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $repo = $this->getDoctrine()->getRepository('AppBundle:Author');
+        $query = $repo->createQueryBuilder('p');
+        $query->delete();
+        $query->getQuery()->execute();
+        $em->flush();
+    }
+
+    private function generateAuthor($index)
+    {
+        $authors = unserialize(Authors);
+        $name = $authors[$index];
+
+
+        $author = new Author();
+        $author->setName("$name");
+        $author->setMail(strtolower($name)."@gmail.com");
+        $d1=new \DateTime();
+        $author->setLastPostDate($d1);
+
+        return $author;
+    }
+
+    private function saveAuthorInDB($author)
+    {
+        $em = $this->getDoctrine()->getManager();
+        //Push data
+        $em->persist($author);
+        $em->flush();
+    }
+
+}
+
+
 
     // public function showAction($id)
     // {
@@ -180,12 +322,12 @@ class DefaultController extends Controller
     //     $query->getQuery();
     // }
 
-    /**
-     * @Route(  "/showAllProduct"
-            )
-     */
 
-    // public function showAction($id)
+
+
+
+
+    // public function showActionAll($id)
     // {
     //     $product = $this->getDoctrine()->getRepository('AppBundle:Product')->find($id);
     //     if (!$product) 

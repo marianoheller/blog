@@ -125,12 +125,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::setAuthorsAction',  '_route' => 'app_default_setauthors',);
             }
 
+            // app_default_initializeblog
+            if (0 === strpos($pathinfo, '/cmd/init') && preg_match('#^/cmd/init(?:\\.(?P<_format>html))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_default_initializeblog')), array (  '_format' => 'html',  '_controller' => 'AppBundle\\Controller\\DefaultController::initializeBlogAction',));
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/blog')) {
             // blog
             if (preg_match('#^/blog(?:/(?P<page>p.\\d+)(?:\\.(?P<_format>html))?)?$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog')), array (  '_format' => 'html',  'page' => '0',  '_controller' => 'AppBundle\\Controller\\LuckyController::numberAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'blog')), array (  '_format' => 'html',  'page' => '0',  '_controller' => 'AppBundle\\Controller\\LuckyController::homePageAction',));
             }
 
             // author

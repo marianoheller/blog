@@ -22,7 +22,7 @@ class LuckyController extends Controller
 	 * 				}
 	 * 			)
      */
-    public function numberAction($page)
+    public function homePageAction($page)
     {
         $maxPostsPerPage = 3;
 
