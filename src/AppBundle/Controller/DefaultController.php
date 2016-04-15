@@ -103,9 +103,8 @@ class DefaultController extends Controller
         //REPORT
 
         $response = new Response("Blog initialized");
-
         $response->setStatusCode(200);
-        $response->headers->set('Refresh', '5; /blog');
+        $response->headers->set('Refresh', '2; /blog');
         return $response;
     }
 
