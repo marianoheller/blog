@@ -14,6 +14,7 @@ use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\CssSelector\CssSelectorConverter;
 
 
+const imagesFolderName = "images_blog";
 const cantPostsAtInit = 10;
 define ("Authors", serialize (array ("Jesse", "Mike", "Molly","Skyler")));
 
@@ -87,6 +88,7 @@ class DefaultController extends Controller
         //CLEAR ALL AUTHORS AND POSTS
         $this->clearAllPosts();
         $this->clearAllAuthors();
+        $this->deleteAllImages();
 
         //CREATE AUTHORS
         $authorsArray = unserialize(Authors);
@@ -117,7 +119,7 @@ class DefaultController extends Controller
      *  */
     public function downloadAction()
     {
-        $folder="images_blog";
+        $folder= imagesFolderName;
         $file = 'https://unsplash.it/850/350?image='.rand(0,100);
         $dest = "$folder\\".rand(0,100).".png";    //.basename($file);
         if ( !is_dir($folder) )
@@ -184,19 +186,45 @@ class DefaultController extends Controller
         $blog_post->setDate($d1);
 
         //Image
-        static $filename_dest = 0;
-        $folder="images_blog";
-        $file = 'https://unsplash.it/850/350?image='.rand(0,100);
-        $dest = "$folder\\$filename_dest.png";    //.basename($file);
-        $filename_dest++;
+        $folder = imagesFolderName;
         if ( !is_dir($folder) )
             mkdir($folder);
+        $ficherosArray = scandir($folder);
+        $filename_dest=0;
+        foreach( $ficherosArray as $fichero) {
+            $withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', basename($fichero) );
+            $value = intval($withoutExt);
+            if ( $value != 0 ) {
+                if ( $value > $filename_dest )
+                    $filename_dest = $value;
+            }
+        }
+        $filename_dest++;
+
+        $file = 'https://unsplash.it/850/350?image='.rand(0,70);
+        $dest = "$folder\\$filename_dest.png";    //.basename($file);
+
+
         file_put_contents($dest,fopen($file,'r'));
 
         //$imagePath = 'https://unsplash.it/850/350?image='.rand(0,100);
         $blog_post->setImage("/".$dest);
 
         return $blog_post;
+    }
+
+    private function deleteAllImages()
+    {
+        $folder = imagesFolderName;
+        if ( !is_dir($folder) )
+            return;
+        $ficherosArray = scandir($folder);
+        foreach( $ficherosArray as $fichero) {
+            if ( !is_dir($fichero) && strlen($fichero)>3)
+                unlink($folder."\\".$fichero);
+        }
+
+
     }
 
     private function savePostInDB($blog_post)
