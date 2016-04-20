@@ -8,7 +8,7 @@
             <div class="blog-post">
                 <h3>{{ entry.title }} <small>{{ entry.date.format('d-m-Y') }}</small></h3>
                 <img class="thumbnail" src={{ entry.image }}>
-                <p>{{ entry.body }}</p>
+                <p>{{ entry.body | raw}}</p>
                 <div class="callout">
                     <ul class="menu simple">
                         <li><a href="/blog/a/{{ entry.author }}"><p>{{ entry.author }}</p></a></li>

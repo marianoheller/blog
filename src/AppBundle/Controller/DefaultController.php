@@ -94,6 +94,7 @@ class DefaultController extends Controller
             $author = $this->generateAuthor($i);
             $this->saveAuthorInDB($author);
         }
+
         //CREATE POSTS
         for ($i = 0; $i < cantPostsAtInit; $i++) {
             $blog_post = $this->generatePost();
@@ -101,14 +102,29 @@ class DefaultController extends Controller
         }
 
         //REPORT
-
         $response = new Response("Blog initialized");
         $response->setStatusCode(200);
         $response->headers->set('Refresh', '2; /blog');
         return $response;
     }
 
-
+    /**
+     * @Route ("/cmd/download.{_format}",
+     *          name="download",
+     *          defaults={"_format":"html"},
+     *          requirements={"_format":"html"}
+     *     )
+     *  */
+    public function downloadAction()
+    {
+        $folder="images_blog";
+        $file = 'https://unsplash.it/850/350?image='.rand(0,100);
+        $dest = "$folder\\".rand(0,100).".png";    //.basename($file);
+        if ( !is_dir($folder) )
+            mkdir($folder);
+        file_put_contents($dest,fopen($file,'r'));
+        return $this->redirectToRoute("blog");
+    }
 
 //    =================================================================================================
 //
@@ -168,8 +184,17 @@ class DefaultController extends Controller
         $blog_post->setDate($d1);
 
         //Image
-        $imagePath = 'https://unsplash.it/850/350?image='.rand(0,100);
-        $blog_post->setImage($imagePath);
+        static $filename_dest = 0;
+        $folder="images_blog";
+        $file = 'https://unsplash.it/850/350?image='.rand(0,100);
+        $dest = "$folder\\$filename_dest.png";    //.basename($file);
+        $filename_dest++;
+        if ( !is_dir($folder) )
+            mkdir($folder);
+        file_put_contents($dest,fopen($file,'r'));
+
+        //$imagePath = 'https://unsplash.it/850/350?image='.rand(0,100);
+        $blog_post->setImage($dest);
 
         return $blog_post;
     }

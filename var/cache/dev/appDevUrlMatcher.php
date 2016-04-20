@@ -130,6 +130,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_default_initializeblog')), array (  '_format' => 'html',  '_controller' => 'AppBundle\\Controller\\DefaultController::initializeBlogAction',));
             }
 
+            // download
+            if (0 === strpos($pathinfo, '/cmd/download') && preg_match('#^/cmd/download(?:\\.(?P<_format>html))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'download')), array (  '_format' => 'html',  '_controller' => 'AppBundle\\Controller\\DefaultController::downloadAction',));
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/blog')) {
