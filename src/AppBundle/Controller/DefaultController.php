@@ -194,7 +194,7 @@ class DefaultController extends Controller
         file_put_contents($dest,fopen($file,'r'));
 
         //$imagePath = 'https://unsplash.it/850/350?image='.rand(0,100);
-        $blog_post->setImage($dest);
+        $blog_post->setImage("/".$dest);
 
         return $blog_post;
     }

@@ -360,3 +360,8 @@ a15427,127.0.0.1,GET,http://localhost/blog/p/images_blog%5C5.png,1461169810,7c96
 7c96a0,127.0.0.1,GET,http://localhost/blog/p/images_blog%5C5.png,1461169810,,404
 743384,127.0.0.1,GET,http://localhost/blog/p/images_blog%5C4.png,1461169811,147d47,200
 147d47,127.0.0.1,GET,http://localhost/blog/p/images_blog%5C4.png,1461169812,,404
+e71d17,127.0.0.1,GET,http://localhost/blog,1461170298,,200
+f07689,127.0.0.1,GET,http://localhost/cmd/init,1461170420,,200
+3065ed,127.0.0.1,GET,http://localhost/blog,1461170422,,200
+c2ea5d,127.0.0.1,GET,http://localhost/blog/p/1,1461170512,,200
+bebde4,127.0.0.1,GET,http://localhost/blog/p/3,1461170526,,200
